@@ -1,0 +1,25 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jun 11 16:25:57 GMT 2023","Sun Jun 11 16:25:57 GMT 2023","536","tests","test_login_endpoint","","","","test_login[data6]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Sun Jun 11 16:25:53 GMT 2023","Sun Jun 11 16:25:54 GMT 2023","535","tests","test_login_endpoint","","","","test_registration","
+    Creating test user
+    "
+"passed","Sun Jun 11 16:25:54 GMT 2023","Sun Jun 11 16:25:54 GMT 2023","521","tests","test_login_endpoint","","","","test_login[data0]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Sun Jun 11 16:25:54 GMT 2023","Sun Jun 11 16:25:55 GMT 2023","564","tests","test_login_endpoint","","","","test_login[data1]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Sun Jun 11 16:25:55 GMT 2023","Sun Jun 11 16:25:55 GMT 2023","538","tests","test_login_endpoint","","","","test_login[data2]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Sun Jun 11 16:25:56 GMT 2023","Sun Jun 11 16:25:57 GMT 2023","537","tests","test_login_endpoint","","","","test_login[data5]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Sun Jun 11 16:25:55 GMT 2023","Sun Jun 11 16:25:56 GMT 2023","503","tests","test_login_endpoint","","","","test_login[data3]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Sun Jun 11 16:25:56 GMT 2023","Sun Jun 11 16:25:56 GMT 2023","486","tests","test_login_endpoint","","","","test_login[data4]","
+    Test the login endpoint with different data parameters.
+    "

@@ -9,6 +9,7 @@ log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
 log.addHandler(logging.StreamHandler())
 
+
 @pytest.fixture
 def new_tourist():
     # Generate a unique ID for the tourist
@@ -25,18 +26,26 @@ def new_tourist():
 
     response = requests.post(f"{BASE_URL}/Tourist", json=tourist_data)
     assert response.status_code == 201
-    print(f"POST '/Tourist' endpoint responded with {response.status_code} status code and {response.text}")
-
-
+    print(
+        f"POST '/Tourist' endpoint responded with "
+        f"{response.status_code} status code and "
+        f"{response.text}"
+    )
     return response.json()["id"]
+
+
 """
 def test_delete_tourist_success(new_tourist):
     # Delete the tourist
     response = requests.delete(f"{BASE_URL}/Tourist/{new_tourist}")
-    print(f"DELETE '/Tourist' endpoint responded with {response.status_code} status code and {response.text}")
+    print(
+        f"DELETE '/Tourist' endpoint responded with "
+        f"{response.status_code} status code and "
+        f"{response.text}"
+    )
     assert response.status_code == 200
-"""
-"""
+
+
 def test_delete_tourist_twice(new_tourist):
     # Try to delete the same tourist twice
     response1 = requests.delete(f"{BASE_URL}/Tourist/{new_tourist}")

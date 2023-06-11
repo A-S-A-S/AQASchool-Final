@@ -2,7 +2,6 @@ import pytest
 import requests
 import uuid
 
-
 BASE_URL = "http://restapi.adequateshop.com/api/AuthAccount"
 EMAIL = f"{str(uuid.uuid4())}@aaa.com"
 PASSWD = "secret"
@@ -87,13 +86,19 @@ def test_login(data):
     """
     url = f"{BASE_URL}/Login"
     response = requests.post(url, json=data)
-    assert response.status_code == data["expected_status"], f"Expected code: {data['expected_status']}, Actual code: {response.status_code}"
+    assert response.status_code == data["expected_status"], \
+        f"Expected code: {data['expected_status']}, " \
+        f"Actual code: {response.status_code}"
 
-    # Based on the status code, response structure will be different. This retrieves the message regardless of case
+    # Based on the status code, response structure will be different
+    # This retrieves the message regardless of case
     response_json = response.json()
-    message = response_json.get("message", response_json.get("Message", "")).lower()
+    message = response_json.get("message", response_json.get("Message", ""))
+    message = message.lower()
     expected_message = data["expected_message"].lower()
-    assert message == expected_message, f"Expected message: {expected_message}, Actual message: {message}"
+    assert message == expected_message, \
+        f"Expected message: {expected_message}, " \
+        f"Actual message: {message}"
 
     # If there is error description hidden inside "ModelState"
     if data["expected_errors"] is not None:

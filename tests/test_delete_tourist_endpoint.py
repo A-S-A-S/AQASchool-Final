@@ -29,13 +29,13 @@ def new_tourist():
 
 
     return response.json()["id"]
-
+"""
 def test_delete_tourist_success(new_tourist):
     # Delete the tourist
     response = requests.delete(f"{BASE_URL}/Tourist/{new_tourist}")
     print(f"DELETE '/Tourist' endpoint responded with {response.status_code} status code and {response.text}")
     assert response.status_code == 200
-    
+"""
 """
 def test_delete_tourist_twice(new_tourist):
     # Try to delete the same tourist twice

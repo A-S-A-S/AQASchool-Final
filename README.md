@@ -35,11 +35,11 @@ TODO: ENV issue. Delete endpoint is unavailable
 - Pipeline Run: [Link to Pipeline Run](https://github.com/A-S-A-S/AQASchool-Final/actions/runs/5247623217/jobs/9478019885)
 - Allure Report: [Link to Allure Report](https://a-s-a-s.github.io/AQASchool-Final/12/#)
 
-![Pipeline Demonstration](https://imgur.com/a/92DOkAO)
+![Pipeline Demonstration](https://i.imgur.com/FnpTb9w.png)
 
 **Demonstration of the CI/CD pipeline with failed test:**
 
 - Pipeline Run: [Link to Pipeline Run](https://github.com/A-S-A-S/AQASchool-Final/actions/runs/5247774303/jobs/9478370093)
 - Allure Report: [Link to Allure Report](https://a-s-a-s.github.io/AQASchool-Final/15/#)
 
-![Pipeline Demonstration with Failed Test](https://imgur.com/a/Ide0KkY)
+![Pipeline Demonstration with Failed Test](https://i.imgur.com/tJhPS93.png)

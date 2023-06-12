@@ -2,7 +2,7 @@ Final Task: API Testing using Python's requests library
 Objective: Create tests for specific API endpoints of the REST API located at http://restapi.adequateshop.com/swagger/ui/index#. The API endpoints to be tested are: 
  
 1. POST /api/AuthAccount/Login 
-2. DELETE /api/Tourist/{id} 
+2. GET /api/Tourist/{id} 
  
 Task Details 
 1. For testing the POST /api/AuthAccount/Login endpoint, you are required to write test cases that cover different scenarios including: 
@@ -11,18 +11,17 @@ Task Details
 - Unsuccessful login due to empty username/password 
 - Other edge cases you deem necessary 
  
-2. For testing the DELETE /api/Tourist/{id} endpoint, the task is more complex: 
+2. For testing the GET /api/Tourist/{id} endpoint, the task is more complex: 
 - You should first create a new tourist using a relevant endpoint (for example, POST /api/Tourist). Ensure that you create a unique tourist and not modify or delete any existing tourist data. 
-- After creating a tourist, write test cases to delete the tourist using the DELETE /api/Tourist/{id} endpoint. Scenarios you might consider: 
-- Successful deletion 
-- Trying to delete the same tourist twice 
-- Trying to delete a non-existing tourist 
+- After creating a tourist, write test cases to get the tourist data using the GET /api/Tourist/{id} endpoint. Scenarios you might consider: 
+- Successful request 
+- Tourist not found 
 - Other edge cases you deem necessary 
  
 You are expected to use Python's requests library for this task. Test cases should assert both HTTP status codes and response bodies where applicable. Don't forget to clean up any created data at the end of your tests to leave the environment as it was before the tests were run. 
  
 Acceptance Criteria 
-1. Sufficient test coverage for the POST /api/AuthAccount/Login and DELETE /api/Tourist/{id} endpoints. 
+1. Sufficient test coverage for the POST /api/AuthAccount/Login and GET /api/Tourist/{id} endpoints. 
 2. Clear and detailed reporting of each test case, including the purpose of the test, the expected result, and the actual result. 
 3. Integration of your tests in a CI/CD pipeline. You are required to: 
 - Create a GitHub repository for your code. 

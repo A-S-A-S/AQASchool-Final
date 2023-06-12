@@ -30,11 +30,7 @@ jobs:
       - name: Run Tests
         if: always()
         run: pytest --alluredir=allure-results
-        continue-on-error: true
-
-      - name: Check Tests Status
-        if: ${{ steps.test.outcome == 'failure' }}
-        run: exit 1
+        continue-on-error: false
 
       - name: Get Allure history
         uses: actions/checkout@v2

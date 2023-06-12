@@ -1,0 +1,47 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 12 19:16:26 GMT 2023","Mon Jun 12 19:16:26 GMT 2023","509","tests","test_login_endpoint","","","","test_login[data2]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Mon Jun 12 19:16:24 GMT 2023","Mon Jun 12 19:16:24 GMT 2023","494","tests","test_get_tourist_endpoint","","","","test_get_tourist_server_error[%3Furl%3Dhttp%3A%2F%2Fwww.google.com%2F]","
+    Verify 400 error
+    First of all, it should not be this way, so I won't check the body
+    "
+"passed","Mon Jun 12 19:16:25 GMT 2023","Mon Jun 12 19:16:26 GMT 2023","522","tests","test_login_endpoint","","","","test_login[data1]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Mon Jun 12 19:16:22 GMT 2023","Mon Jun 12 19:16:22 GMT 2023","478","tests","test_get_tourist_endpoint","","","","test_get_tourist_not_found","
+    Verify 404 error
+    If you want to verify that the id is not present for sure
+    Call GET {{url}}/api/Tourist. But this will degrade performance
+    "
+"passed","Mon Jun 12 19:16:25 GMT 2023","Mon Jun 12 19:16:25 GMT 2023","541","tests","test_login_endpoint","","","","test_login[data0]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Mon Jun 12 19:16:26 GMT 2023","Mon Jun 12 19:16:27 GMT 2023","484","tests","test_login_endpoint","","","","test_login[data3]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Mon Jun 12 19:16:22 GMT 2023","Mon Jun 12 19:16:23 GMT 2023","468","tests","test_get_tourist_endpoint","","","","test_get_tourist_invalid_id[abc]","
+    Cases for invalid payload
+    "
+"passed","Mon Jun 12 19:16:28 GMT 2023","Mon Jun 12 19:16:28 GMT 2023","462","tests","test_login_endpoint","","","","test_login[data6]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Mon Jun 12 19:16:27 GMT 2023","Mon Jun 12 19:16:27 GMT 2023","472","tests","test_login_endpoint","","","","test_login[data4]","
+    Test the login endpoint with different data parameters.
+    "
+"passed","Mon Jun 12 19:16:23 GMT 2023","Mon Jun 12 19:16:23 GMT 2023","519","tests","test_get_tourist_endpoint","","","","test_get_tourist_invalid_id[None]","
+    Cases for invalid payload
+    "
+"passed","Mon Jun 12 19:16:24 GMT 2023","Mon Jun 12 19:16:25 GMT 2023","521","tests","test_login_endpoint","","","","test_registration","
+    Creating test user
+    "
+"passed","Mon Jun 12 19:16:21 GMT 2023","Mon Jun 12 19:16:22 GMT 2023","509","tests","test_get_tourist_endpoint","","","","test_get_tourist_success","
+    Happy path
+    "
+"passed","Mon Jun 12 19:16:23 GMT 2023","Mon Jun 12 19:16:24 GMT 2023","492","tests","test_get_tourist_endpoint","","","","test_get_tourist_server_error[%3Ffilter%3Did%20eq%209999]","
+    Verify 400 error
+    First of all, it should not be this way, so I won't check the body
+    "
+"passed","Mon Jun 12 19:16:27 GMT 2023","Mon Jun 12 19:16:28 GMT 2023","461","tests","test_login_endpoint","","","","test_login[data5]","
+    Test the login endpoint with different data parameters.
+    "
